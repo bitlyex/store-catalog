@@ -1,0 +1,41 @@
+<%= form_for(@store) do |f| %>
+  <div>
+    <%= f.label :name_store %> </br>
+    <%= f.text_field :name_store %> </br>
+  </div>
+
+  <div>
+    <%= f.label :address %> </br>
+    <%= f.text_field :address %> </br>
+  </div>
+
+  <div>
+    <%= f.label :subdistrict %> </br>
+    <%= f.text_field :subdistrict %> </br>
+  </div>
+
+  <div>
+    <%= f.label :province %> </br>
+    <%= f.text_field :province %> </br>
+  </div>
+
+  <div>
+    <%= f.label :country %> </br>
+    <%= f.text_field :country %> </br> 
+  </div>
+
+  <div>
+    <%= f.label :account_id %> </br>
+    <%= f.text_field :account_id %> </br> 
+  </div>
+
+  <div>
+    <%= f.label :payment_id %> </br>
+    <%= f.text_field :payment_id %> </br> </br>
+  </div>
+
+  <div>
+    <%= f.submit 'Save Data' %> 
+  </div>
+<% end %>
+

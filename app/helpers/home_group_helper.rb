@@ -1,0 +1,2 @@
+module HomeGroupHelper
+end

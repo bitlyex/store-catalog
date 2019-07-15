@@ -1,0 +1,8 @@
+<%= link_to '[INDEX]', {action: 'index'} %>
+</br>
+<h1> Stores#edit </h1>
+<%= render 'form' %>
+</br>
+<%= render 'info', info_account: @store.account.name %> 
+</br>
+<%= render 'info_payment', info_payment: @store.payment.account.name %>

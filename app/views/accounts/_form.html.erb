@@ -1,0 +1,45 @@
+<%= form_for(@account) do |f| %>
+  <div>
+    <%= f.label :name %> </br> 
+      <% if @account.errors[:name].any? %>
+        <%= @account.errors[:name].first %>
+      <% end %>
+    <%= f.text_field :name %> </br>
+  </div>
+
+  <div>
+    <%= f.label :email %> </br>
+      <% if @account.errors[:email].any? %>
+        <%= @account.errors[:email].first %>
+      <% end %>
+    <%= f.text_field :email %> </br>
+  </div>
+
+  <div>
+    <%= f.label :phone_number %> </br>
+      <% if @account.errors[:phone_number].any? %>
+        <%= @account.errors[:phone_number].first %>
+      <% end %>
+    <%= f.text_field :phone_number %> </br>
+  </div>
+
+  <div>
+    <%= f.label :user_role %> </br>
+      <% if @account.errors[:user_role].any? %>
+        <%= @account.errors[:user_role].first %>
+      <% end %>
+    <%= f.text_field :user_role %> </br>
+  </div>
+
+  <div>
+    <%= f.label :status %> </br>
+      <% if @account.errors[:status].any? %>
+        <%= @account.errors[:status].first %>
+      <% end %>
+    <%= f.text_field :status %> </br> </br>
+  </div>
+
+  <div>
+    <%= f.submit 'Save Data' %> 
+  </div>
+<% end %>

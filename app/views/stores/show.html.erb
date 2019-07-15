@@ -1,0 +1,10 @@
+<%= link_to '[INDEX]', {action: 'index'} %>
+</br>
+<h1> Stores#show </h1>
+Name store: <%= @store.name_store %> </br>
+Address: <%= @store.address %> </br>
+Subdistrict: <%= @store.subdistrict %> </br>
+Province: <%= @store.province %> </br>
+Country: <%= @store.country %> </br>
+Id/Account/Email/Phone: [<%= @store.account_id %>] | <%= @store.account.name %> | <%= @store.account.email %> | <%= @store.account.phone_number %> </br>
+Id/Payment/Balance: <%= @store.payment.account.name %> | [<%= @store.payment.id %>] | [<%= @store.payment.balance %>] </br>
