@@ -19,8 +19,12 @@ password; matsuda
 
 ```
 gem install rails
-rails g controller books index
-rails g controller authors index
+rails g controller stores index
+rails g controller accounts index
 rails g controller sessions index
 rails g controller users index
+rails g controller gopays index
+rails g controller payments index
+create the models accounts 
+create the models stores
 ```
