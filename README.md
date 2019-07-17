@@ -1,24 +1,19 @@
 # README
+To run this application you just have to run this:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+rake db:create 
+rake db:migrate
+rails s -b 0.0.0.0
+```
+Voila! then you can access it on http://localhost:3000
 
-Things you may want to cover:
+# Steps executed when building this application
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+gem install rails
+rails g controller books index
+rails g controller authors index
+rails g controller sessions index
+rails g controller users index
+```
